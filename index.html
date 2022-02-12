@@ -44,7 +44,7 @@ function getWhiteBalls(ballcnt) {
 			whiteballs.push(num);
 		}
 	}
-	whiteballs.sort();
+	whiteballs.sort(function(a,b){return a-b});
 	whiteballs.forEach((item) => {	
   		ball = document.createElement("div");
 		ball.style.backgroundColor = "white";
