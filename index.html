@@ -40,9 +40,7 @@ var whiteballs = [];
 function getWhiteBalls(ballcnt) {
 	while (whiteballs.length < 5) {console.log(whiteballs);
 		let num = Math.floor(Math.random() * ballcnt) +1;
-		if (whiteballs.includes(num)) {
-			return
-		} else {
+		if (!whiteballs.includes(num)) {
 			whiteballs.push(num);
 		}
 	}
