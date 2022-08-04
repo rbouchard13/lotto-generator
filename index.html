@@ -83,7 +83,7 @@ function oddBall(specBall) {
 		let obj = {value: i, count: 0};
 		spec.push(obj);	
 	}
-	for (i = 0; i <= 100000000; i++) {
+	for (i = 0; i <= 1000000; i++) {
 		let num = Math.floor(Math.random() * specBall) + 1;
 		spec[num -1].count = spec[num -1].count + 1;
 	}
@@ -101,7 +101,7 @@ function powerball(whiteNum,specBall) {
 		let obj = {value: i, count: 0};
 		white.push(obj);	
 	}
-	for (i = 0; i <= 100000000; i++) {
+	for (i = 0; i <= 1000000; i++) {
 		let num = Math.floor(Math.random() * whiteNum) + 1;
 		white[num -1].count = white[num -1].count + 1;
 	}
